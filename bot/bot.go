@@ -37,7 +37,6 @@ func (b *Bot) Run() {
 		}
 		handler(s, i)
 	})
-
 	discord.Identify.Intents = discordgo.IntentsGuildMessages
 
 	discord.Open()
@@ -49,7 +48,6 @@ func (b *Bot) Run() {
 	<-c
 
 	fmt.Println("Bot stopped.")
-
 }
 
 func checkNilErr(e error) {

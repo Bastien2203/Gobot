@@ -43,14 +43,12 @@ var (
 
 func RemindCommandHandler(s *discordgo.Session, i *discordgo.InteractionCreate) {
 	message := i.ApplicationCommandData().Options[0].StringValue()
-
 	options := i.ApplicationCommandData().Options
 
 	optionMap := make(map[string]*discordgo.ApplicationCommandInteractionDataOption, len(options))
 	for _, opt := range options {
 		optionMap[opt.Name] = opt
 	}
-
 	fmt.Println(optionMap)
 
 	var days int

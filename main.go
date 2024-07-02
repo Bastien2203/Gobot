@@ -9,6 +9,7 @@ import (
 )
 
 // https://discord.com/oauth2/authorize?client_id=1257416801734889503&permissions=8&integration_type=0&scope=bot
+
 func main() {
 	defer task_scheduler.TaskScheduler.Stop()
 
