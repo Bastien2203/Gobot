@@ -10,8 +10,15 @@ APP_ID="YOUR_APP_ID"
 ```
   
 
-## Run the build
+## Run the build (Linux)
 
 ```bash
 ./gobot
+```
+
+
+## Or run the project with go run
+
+```bash
+go run main.go
 ```
